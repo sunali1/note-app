@@ -1,11 +1,7 @@
-(function(exports){
   function testNoteIncludesText() {
-    var note = new Note();
+    var text = 'My favourite language is JavaScript'
+    var note = new Note(text);
 
-    if (note.getText() !== 'My favourite language is JavaScript') {
-      throw new Error('String does not match');
-    }
-  }
-
-  testNoteIncludesText();
-}) (this);
+    assert.isTrue(note.getText() === text);
+};
+testNoteIncludesText();
