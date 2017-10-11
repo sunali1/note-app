@@ -5,7 +5,7 @@ function listNotes () {
   noteList.lists = []
   noteList.createAndSave(text1)
   noteList.createAndSave(text2);
-  var entries = noteList.viewNote();
+  var entries = noteList.viewNoteList();
   assert.isTrue(entries[0].getText() === text1);
   assert.isTrue(noteList.lists.length === 2);
 }

@@ -2,12 +2,12 @@
 function NoteList() {
   this.lists = [];
 }
-NoteList.prototype.createAndSave = function(text) {
-     var note = new Note(text);
+NoteList.prototype.createAndSave = function(text) {  // noteConstructor = Note
+     var note = new Note(text); // noteConstructor(text)
      this.lists.push(note);
 };
 
-NoteList.prototype.viewNote = function() {
+NoteList.prototype.viewNoteList = function() {
       return this.lists;
 };
 
