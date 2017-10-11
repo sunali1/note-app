@@ -1,7 +1,6 @@
 {
   "name": "note-app",
   "version": "1.0.0",
-  "description": "",
   "main": "assert.js",
   "dependencies": {},
   "devDependencies": {},
@@ -17,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/neroshan12/note-app/issues"
   },
-  "homepage": "https://github.com/neroshan12/note-app#readme"
+  "homepage": "https://github.com/neroshan12/note-app#readme",
+  "description": ""
 }
