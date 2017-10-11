@@ -2,8 +2,8 @@
 function NoteList() {
   this.lists = [];
 }
-NoteList.prototype.createAndSave = function(text) {  // noteConstructor = Note
-     var note = new Note(text); // noteConstructor(text)
+NoteList.prototype.createAndSave = function(text, NoteConstructor = Note) {  // noteConstructor = Note
+     var note = new NoteConstructor(text); // noteConstructor(text)
      this.lists.push(note);
 };
 
