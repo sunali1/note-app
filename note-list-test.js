@@ -1,4 +1,4 @@
-function listNotes () {
+function testlistNotes () {
   var text1 = "Favourite drink: seltzer"
   var text2 = "Eggs"
   var noteList = new NoteList
@@ -9,4 +9,4 @@ function listNotes () {
   assert.isTrue(entries[0].getText() === text1);
   assert.isTrue(noteList.lists.length === 2);
 }
-listNotes();
+testlistNotes();
